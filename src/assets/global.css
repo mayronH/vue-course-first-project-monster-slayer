@@ -1,0 +1,91 @@
+@import url('https://api.fonts.coollabs.io/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+
+:root {
+  --white: #f5f2eb;
+  --bg-dark: #21212d;
+  --bg-lighter: #332f40;
+  --accent: #f1b475;
+  --accent2: #a39ea9;
+
+  --extra-small-size-fluid: clamp(0.5rem, 1vw, 0.75rem);
+  --small-size-fluid: clamp(1rem, 2vw, 1.5rem);
+  --medium-size-fluid: clamp(2rem, 4vw, 3rem);
+  --large-size-fluid: clamp(2.5rem, 6vw, 4.5rem);
+  --extra-large-size-fluid: clamp(8rem, 10vw + 1rem, 10rem);
+
+  --border-radius: 8px;
+
+  --box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.15);
+}
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Main Components */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 0.75rem;
+
+  background-color: var(--bg-medium);
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+
+  background-color: var(--bg-lighter);
+
+  border: 2px solid var(--bg-medium);
+}
+
+body {
+  font-family: 'Inter';
+  color: var(--white);
+
+  background-color: var(--bg-dark);
+}
+
+/* Disable all animations for people that prefer without it */
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
