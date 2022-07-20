@@ -1,11 +1,13 @@
 @import url('https://api.fonts.coollabs.io/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
 
 :root {
+  /* Tako Theme */
   --white: #f5f2eb;
-  --bg-dark: #21212d;
-  --bg-lighter: #332f40;
-  --accent: #f1b475;
+  --bg-dark: #261f32;
+  --bg-lighter: #514661;
+  --accent: #fea95e;
   --accent2: #a39ea9;
+  --accent3: #a478a5;
 
   --extra-small-size-fluid: clamp(0.5rem, 1vw, 0.75rem);
   --small-size-fluid: clamp(1rem, 2vw, 1.5rem);
