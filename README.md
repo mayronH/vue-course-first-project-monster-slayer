@@ -1,44 +1,44 @@
-# Vue 3 + TypeScript + Vite + Pinia + Vue Router + Eslint + Prettier
+# Vue 3 Course Project
 
-My personal template for Vue Projects.
+The First Project from the course [Vue - The Complete Guide](https://www.udemy.com/course/vuejs-2-the-complete-guide/). A simple Turn-Based RPG Battle.
 
-## Recommended IDE Setup
+Differently of what is shown in the course, my project uses [Vite](https://vitejs.dev/), the Composition API with the Setup() Hook and Typescript.
 
--   [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
-## Type Support For `.vue` Imports in TS
+## Built with
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's Take Over mode by following these steps:
+- [Pinia](https://pinia.vuejs.org/)
+- [pNpM](https://pnpm.io/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Vue](https://vuejs.org/)
 
-1. Run `Extensions: Show Built-in Extensions` from VS Code's command palette, look for `TypeScript and JavaScript Language Features`, then right click and select `Disable (Workspace)`. By default, Take Over mode will enable itself if the default TypeScript extension is disabled.
-2. Reload the VS Code window by running `Developer: Reload Window` from the command palette.
 
-You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/volar/discussions/471).
+## Get Started
 
-# Usage
+- Get the project code
 
-## Clone to local
-
-```Shell
-npx degit mayronH/personal-vite-template#main my-project
-cd my-project
-pnpm install
+```bash
+git clone https://github.com/mayronH/vue-course-first-project-monster-slayer
 ```
 
-## Development
+- Installation of dependencies
 
-Just run and visit http://localhost:3000
+```bash
+cd vue-course-first-project-monster-slayer
 
-```Shell
+pnpm install
+
+```
+
+- run
+
+```bash
 pnpm dev
 ```
 
-## Build
+- build
 
-To build the App, run
-
-```Shell
+```bash
 pnpm build
 ```
-
-And you will see the generated file in dist that ready to be served.
